@@ -1,3 +1,2 @@
-# FS1000 Individuale Project 
+# FS1000 Individual Project 
 
-FS1000 Individuale Project 
