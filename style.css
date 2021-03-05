@@ -81,39 +81,57 @@
     line-height: 1.2;
   }
   
+  .hero-text{
+      text-align: center;
+      top: 40%;
+      right: 5%;
+      left: 2%;
+      height: fit-content;
+      font-size: 50px;
+      background-position: center;
+      position: absolute;
+      color: whitesmoke;
+      text-align: center;
+      position:relative;
+    }
+
   .hero-image {
-    background-image: url("/images/1449545-amazing-chibi-deadpool-wallpaper-2133x2133.jpg");
-    background-image: grey(0, 0, 0, 0.5) black (0, 0, 0, 0.5);
-    height: 35%;
-    background-position: center;
+    background-image: url("/images/1.jpg");
+    height: 45%;
+    width: 100%;
+    margin-top: 0px ;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative
+    position: relative;
+    text-shadow: 0 0 4px black;
+    background-position: center
   }
   
-  .hero-text {
+  .hero-button {
     text-align: center;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    right: 5%;
     left: 50%;
+    margin-top:0px;
     transform: translate(-50%, -50%);
     color: black;
   }
   
-  .hero-text button {
+  .hero-button button {
     border: none;
     outline: 0;
     display: inline-block;
-    padding: 10px 25px;
+    padding: 15px 25px;
     color: black;
     background-color: white;
     text-align: center;
     cursor: pointer
   }
   
-  .hero-text button:hover {
+  .hero-button button:hover {
     background-color: #555;
-    color: white
+    color: white;
+    position: center
   }
   
   .firstText {
@@ -123,9 +141,10 @@
 
   .homeText {
     text-align: center;
-    position:fixed;
+    position: relative;
     text-decoration: none;
     padding: 50px;
+    font-size: 25px;
   }
 
   .mainFooter {

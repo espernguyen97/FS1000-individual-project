@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Contact Page Validation</title>
-        <meta="viewport" content="width=device-width, initial-scale=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <link rel="stylesheet" href="style.css">        
     </head>
     <body>
@@ -73,13 +73,13 @@
             }
             </script>
             <section>
-                <input type="reset" id="reset" value="Reset">
+                <input type="reset" id="reset" value="Try Again" onclick="window.location.href=`homePage.html`;">
             </section>
             <script type="text/javascript">
                 document.getElementById("reset").addEventListener("click", clicked);
                 function clicked()
             {
-            alert("Please refresh this page");
+            alert("Automatically go back to Homepage");
             }
             </script>
             </main>
