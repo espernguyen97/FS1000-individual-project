@@ -1,23 +1,221 @@
-.headerContent {
-  background-color: black ;
-  padding-top: 5px;
-}
-ul {
+
+  .navLinks {
     list-style-type: none;
+    text-decoration: none;
     overflow: hidden;
+    background-color: black
   }
   
-  li {
+  .navLinks a {
+    float:left;
+    display: block;
+    color:#f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 20px;
+  }
+
+  .navLinks a:hover{
+    background-color: red;
+    color: black
+  }
+
+  .navLinks a.active {
+    background-color: red;
+    color: white;
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Kaushan Script, cursive; 
+    background-color: grey;
+  }
+  
+  .resumeContainer {
+    max-width: 800px;
+    margin: 15px auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .name {
+    font-size: 30px;
+    font-weight: bold
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 300;
+    color: #236FB2;
+  }
+
+  .section-title {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .education {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid lightgrey;
+  }
+  
+  .education:last-child {
+    border-bottom: none;
+  }
+  
+  .school {
+    font-weight: bold;
+    line-height: 1.2;
+  }
+ 
+  .workplace {
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  .itemlist {
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .hero-text{
+      text-align: center;
+      top: 40%;
+      right: 5%;
+      left: 2%;
+      height: fit-content;
+      font-size: 50px;
+      background-position: center;
+      position: absolute;
+      color: whitesmoke;
+      text-align: center;
+      position:relative;
+    }
+
+  .hero-image {
+    background-image: url("/images/1.jpg");
+    height: 45%;
+    width: 100%;
+    margin-top: 0px ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-shadow: 0 0 4px black;
+    background-position: center
+  }
+  
+  .hero-button {
+    text-align: center;
+    position: relative;
+    right: 5%;
+    left: 50%;
+    margin-top:0px;
+    transform: translate(-50%, -50%);
+    color: black;
+  }
+  
+  .hero-button button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 15px 25px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    cursor: pointer
+  }
+  
+  .hero-button button:hover {
+    background-color: #555;
+    color: white;
+    position: center
+  }
+  
+  .firstText {
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .homeText {
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    padding: 50px;
+    font-size: 25px;
+  }
+
+  .mainFooter {
+    background-color: black;
+    color: white;
+    position:fixed;
+    width: 100%;
+    bottom:0;
+    text-align: center;
+  }
+
+  input[type=text], select, textarea {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    float: left;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=reset] {
+    background-color: #4CAF50;
+    color: black;
+    padding: 12px 20px;
+    margin-bottom: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
     float: left;
   }
   
-  li a, .dropbtn {
-    display: inline-block;
-    text-decoration: none ;
-    color: white;
-    text-align: center;
-    padding: 14px 16px 
+  input[type=reset]:hover {
+    background-color: #45a049;
   }
-  li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+  
+  input[type=submit] {
+    background-color:red;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
   }
+
+  input[type=submit]:hover {
+    background-color: red
+  }
+  
+  .formContent {
+    border-radius: 5px;
+    background-color:whitesmoke;
+    padding: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .col20, .col80, input[type=submit], input[type=reset] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
